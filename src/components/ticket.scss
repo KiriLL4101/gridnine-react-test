@@ -23,59 +23,74 @@
     }
   }
 
-  .first-flight{
+  .first-flight {
     border-bottom: 3px solid #4a90e2;
     padding-bottom: 10px;
   }
-  .ticketTo{
-      padding: .2rem 1rem;
-      border-bottom: 1px solid #80808057;
-      .ticketTo__from,
-      .ticketTo__to {
-        font-size: 15px;
-      }
-      .pointer {
-        margin: 0 7px;
-        font-size: 20px;
-      }
-  }
-
-
-  .dateTo{
-    display: flex;
-    justify-content: space-between;
-    margin:6px 0;
-    span{
-        font-size: 16px;
+  .ticketTo {
+    padding: 0.2rem 1rem;
+    border-bottom: 1px solid #80808057;
+    .ticketTo__from,
+    .ticketTo__to {
+      font-size: 15px;
+    }
+    .pointer {
+      margin: 0 7px;
+      font-size: 20px;
+      color: royalblue;
+    }
+    .airport-uid {
+      color: royalblue;
+      cursor: pointer;
     }
   }
 
+  .dateTo {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+    &__date {
+      font-size: 13px;
+      color: royalblue;
+      cursor: pointer;
+    }
+    &__time {
+      font-size: 19px;
+    }
+    .travel-time {
+      img {
+        width: 11px;
+        margin-right: 5px;
+      }
+    }
+  }
 
-  .transfers{
+  .transfers {
     position: relative;
     margin: 0 auto;
     width: 400px;
-    &-count{
-        position: absolute;
-        left: 144px;
-        top: -12px;
-        background: #fff;
-        width: 100px;
-        padding: 0 10px;
-        color: orange;
+    &-count {
+      position: absolute;
+      left: 144px;
+      top: -12px;
+      background: #fff;
+      width: 100px;
+      padding: 0 10px;
+      color: orange;
     }
   }
 
-  .btn{
+  .btn {
     text-transform: uppercase;
     color: #fff;
-    background: rgba(darkorange, .8);
+    background: rgba(darkorange, 0.8);
     width: 100%;
     outline: none;
     text-align: center;
-    padding: .7rem 0;
+    padding: 0.7rem 0;
     font-size: 15px;
-    margin-top:8px;
-    border:none;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
   }
 }
