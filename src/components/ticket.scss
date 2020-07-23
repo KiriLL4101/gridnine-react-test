@@ -1,0 +1,81 @@
+.card {
+  margin-bottom: 25px;
+  .header {
+    color: #fff;
+    background-color: #4a90e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    .header__price {
+      display: block;
+      font-size: 20px;
+      text-align: right;
+      p {
+        margin: 0;
+        font-size: 10px;
+      }
+    }
+    .header__logo {
+      img {
+        width: 135px;
+      }
+    }
+  }
+
+  .first-flight{
+    border-bottom: 3px solid #4a90e2;
+    padding-bottom: 10px;
+  }
+  .ticketTo{
+      padding: .2rem 1rem;
+      border-bottom: 1px solid #80808057;
+      .ticketTo__from,
+      .ticketTo__to {
+        font-size: 15px;
+      }
+      .pointer {
+        margin: 0 7px;
+        font-size: 20px;
+      }
+  }
+
+
+  .dateTo{
+    display: flex;
+    justify-content: space-between;
+    margin:6px 0;
+    span{
+        font-size: 16px;
+    }
+  }
+
+
+  .transfers{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    &-count{
+        position: absolute;
+        left: 144px;
+        top: -12px;
+        background: #fff;
+        width: 100px;
+        padding: 0 10px;
+        color: orange;
+    }
+  }
+
+  .btn{
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(darkorange, .8);
+    width: 100%;
+    outline: none;
+    text-align: center;
+    padding: .7rem 0;
+    font-size: 15px;
+    margin-top:8px;
+    border:none;
+  }
+}

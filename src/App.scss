@@ -1,0 +1,36 @@
+.App{
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.setting{
+    padding: 2.5rem 1rem 0 2rem;
+    border-right: 1px solid #000;
+    .sort,
+    .filter,
+    .price{
+        margin: 0 0 3rem 0;
+        div:first-child{
+            margin-top: 1rem;
+        }
+    }
+    strong{
+        color: rgba( #000, .6);
+    }
+}
+.tickets{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    &__btn{
+        width: 188px;
+        padding: .4rem 0;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+}
